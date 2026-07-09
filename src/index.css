@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  background-color: rgb(81, 0, 202);
+  background-color: hsl(267, 63%, 38%);
 }
 
 @layer base {
