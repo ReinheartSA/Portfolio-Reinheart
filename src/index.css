@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  background-color: rgb(245, 206, 121);
-}
+
 
 @layer base {
   h1, h3, p {
