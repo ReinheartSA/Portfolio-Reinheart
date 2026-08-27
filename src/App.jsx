@@ -148,7 +148,7 @@ function App() {
                 <img src={Icons.mysql} className="w-12 h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
                 </img>MySQL
                 </div>
-                <div className="tech-stack-item flex flex-col items-center justify-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl text-white font-semibold text-lg hover:scale-105 hover:border-white/40 transition-all duration-300">
+                <div className="tech-stack-item flex flex-col items-center justify-center gap-4 bg-blue bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl text-white font-semibold text-lg hover:scale-105 hover:border-white/40 transition-all duration-300">
                 <img src={Icons.supabase} className="w-12 h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
                 </img>Supabase
                 </div>
@@ -161,6 +161,11 @@ function App() {
                 </img>GSAP
                 </div>
               </div>
+            </div>
+          </section>
+          <section>
+            <div className='section-header'>
+              <h1 className='section-title bold text-center'>Career Stages</h1>
             </div>
           </section>
 
@@ -194,6 +199,10 @@ function App() {
                 <p>Wait for more of my projects!</p>
               </div>
             </div>
+          </section>
+
+          <section>
+            
           </section>
 
           <section className="contact-section" id="contact">
