@@ -4,6 +4,7 @@ import './index.css'
 import ozeisCafeImage from './ozeis-cafe.png'
 import karayoukeImage from './karayouke.png'
 import halfBodyImage from './half-body.png'
+import apieImage from '.APIE.png'
 import { Icons } from './icon'
 
 
@@ -199,10 +200,34 @@ function App() {
                 <p>Wait for more of my projects!</p>
               </div>
             </div>
-          </section>
-
-          <section>
-            
+          </section >
+          <section className='ceritificates' id="education">
+            <h1 className="section-title bold text-center">Certificates & Badges</h1>
+            <div className="projects-grid">
+              <div className="project-card">
+                <a href="https://drive.google.com/drive/folders/1FeSuQhbp0WnDclP9bq1qHBLB5_oapToh?usp=sharing/" target="_blank" rel="noopener noreferrer"> 
+                <h1>APIE - Understanding the Internet</h1>
+                <figure className="project-image-frame">
+                  <img src={ozeisCafeImage} alt="Ozeis Cafe" className="project-image" />
+                </figure>
+                <p>Dibuat dengan React & Supabase untuk memudahkan manajemen pesanan di cafe.</p>
+                </a>
+              </div>
+              <div className="project-card">
+                <a href="https://karayouke.com" target="_blank" rel="noopener noreferrer">
+                <h1>Karayouke</h1>
+                <figure className="project-image-frame">
+                  <img src={karayoukeImage} alt="Karayouke" className="project-image" />
+                </figure>
+                <p>Aplikasi karaoke bagi kalian yang suka bernyanyi!</p>
+                </a>
+              </div>
+              <div className="project-card">
+                <a href="https://to-be-announced.com" target="_blank" rel="noopener noreferrer"> </a>
+                <h1>To be announced</h1>
+                <p>Wait for more of my projects!</p>
+              </div>
+            </div>
           </section>
 
           <section className="contact-section" id="contact">
