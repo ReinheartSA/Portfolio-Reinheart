@@ -4,12 +4,16 @@ import './index.css'
 import ozeisCafeImage from './ozeis-cafe.png'
 import karayoukeImage from './karayouke.png'
 import halfBodyImage from './half-body.png'
-import apieImage from '.APIE.png'
+import apieImage from './APIE.png'
+import mieru from './Mieru_performance.png'
+import CCNA_cybersec1 from './Cybersecurity1_CCNA.png'
+import CCNA_cybersec2 from './Cybersecurity2_CCNA.png'
+import CCNA_cybersec3 from './Cybersecurity3_CCNA.png'
 import { Icons } from './icon'
 
 
 
-function Typewriter({ as: Tag = 'p', text, className = '', speed = 35, delay = 0, showEndBlip = false }) {
+function Typewriter({ as: Tag = 'p', text, className = '', speed = 35, delay = 0, showEndBlip = false}) {
   const [displayedText, setDisplayedText] = useState('')
   const [isComplete, setIsComplete] = useState(false)
 
@@ -165,7 +169,7 @@ function App() {
             </div>
           </section>
           <section>
-            <div className='section-header'>
+            <div className='section-header' id='career'>
               <h1 className='section-title bold text-center'>Career Stages</h1>
             </div>
           </section>
@@ -182,7 +186,7 @@ function App() {
                 <figure className="project-image-frame">
                   <img src={ozeisCafeImage} alt="Ozeis Cafe" className="project-image" />
                 </figure>
-                <p>Dibuat dengan React & Supabase untuk memudahkan manajemen pesanan di cafe.</p>
+                <p className='p-4'>Dibuat dengan React & Supabase untuk memudahkan manajemen pesanan di cafe.</p>
                 </a>
               </div>
               <div className="project-card">
@@ -191,41 +195,65 @@ function App() {
                 <figure className="project-image-frame">
                   <img src={karayoukeImage} alt="Karayouke" className="project-image" />
                 </figure>
-                <p>Aplikasi karaoke bagi kalian yang suka bernyanyi!</p>
+                <p className='p-4'>Aplikasi karaoke bagi kalian yang suka bernyanyi!</p>
                 </a>
               </div>
               <div className="project-card">
                 <a href="https://to-be-announced.com" target="_blank" rel="noopener noreferrer"> </a>
                 <h1>To be announced</h1>
-                <p>Wait for more of my projects!</p>
+                <p className='p-4'>Wait for more of my projects!</p>
               </div>
             </div>
           </section >
-          <section className='ceritificates' id="education">
-            <h1 className="section-title bold text-center">Certificates & Badges</h1>
-            <div className="projects-grid">
-              <div className="project-card">
-                <a href="https://drive.google.com/drive/folders/1FeSuQhbp0WnDclP9bq1qHBLB5_oapToh?usp=sharing/" target="_blank" rel="noopener noreferrer"> 
-                <h1>APIE - Understanding the Internet</h1>
-                <figure className="project-image-frame">
-                  <img src={ozeisCafeImage} alt="Ozeis Cafe" className="project-image" />
-                </figure>
-                <p>Dibuat dengan React & Supabase untuk memudahkan manajemen pesanan di cafe.</p>
-                </a>
-              </div>
-              <div className="project-card">
-                <a href="https://karayouke.com" target="_blank" rel="noopener noreferrer">
-                <h1>Karayouke</h1>
-                <figure className="project-image-frame">
-                  <img src={karayoukeImage} alt="Karayouke" className="project-image" />
-                </figure>
-                <p>Aplikasi karaoke bagi kalian yang suka bernyanyi!</p>
-                </a>
-              </div>
-              <div className="project-card">
-                <a href="https://to-be-announced.com" target="_blank" rel="noopener noreferrer"> </a>
-                <h1>To be announced</h1>
-                <p>Wait for more of my projects!</p>
+          <section className='ceritificates' id="badges">
+            <div className="section-header">
+              <h1 className="section-title bold text-center">Certificates & Badges</h1>
+              <div className="projects-grid">
+                <div className="project-card">
+                  <a href="https://drive.google.com/file/d/1Ltio-kAp11iE3sN1VEgqhvokUo6OyVWN/view?usp=sharing" target="_blank" rel="noopener noreferrer"> 
+                  <h1>APIE - Understanding the Internet</h1>
+                  <figure className="project-image-frame">
+                    <img src={apieImage} className="project-image" />
+                  </figure>
+                  <p className ="p-4">Keio University & APIE</p>
+                  </a>
+                </div>
+               <div className="project-card">
+                  <a href="https://drive.google.com/file/d/1Pkv6vFQcBKZpufkK9xpiODaU9xtXGClZ/view?usp=sharing" target="_blank" rel="noopener noreferrer"> 
+                  <h1>Mieru Programming Internship</h1>
+                  <figure className="project-image-frame">
+                    <img src={mieru} className="project-image" />
+                  </figure>
+                  <p className ="p-4">PT. Mieru Karya Kreasi</p>
+                  </a>
+                </div>
+                <div className="project-card">
+                  <a href="https://drive.google.com/file/d/1ZxTdRKA5vS4xouk7f3NzmmXKDREgYBXn/view?usp=sharing" target="blank" rel="noopener noreferrer"> 
+                  <h1>Introduction to Cybersecurity</h1>
+                  <figure className="project-image-frame">
+                    <img src={CCNA_cybersec1} className="project-image" />
+                  </figure>
+                  <p className ="p-4">Cisco Networking Academy </p>
+                  </a>
+                </div>
+                <div className="project-card">
+                  <a href="https://drive.google.com/file/d/1s5sjCQI1ZJNmP9oN5t65lNevBAA_Zc5Z/view?usp=sharing" target="blank" rel="noopener noreferrer"> 
+                  <h1>Cyber Threat Management</h1>
+                  <figure className="project-image-frame">
+                    <img src={CCNA_cybersec2} className="project-image" />
+                  </figure>
+                  <p className ="p-4">Cisco Networking Academy </p>
+                  </a>
+                </div>
+                <div className="project-card">
+                  <a href="https://drive.google.com/file/d/1amB1hiWgBH9rVeFl4ZJTgNYrT5QH8O5L/view?usp=sharing" target="blank" rel="noopener noreferrer"> 
+                  <h1>Digital Safety & Security Awareness</h1>
+                  <figure className="project-image-frame">
+                    <img src={CCNA_cybersec3} className="project-image" />
+                  </figure>
+                  <p className ="p-4">Cisco Networking Academy </p>
+                  </a>
+                </div>
               </div>
             </div>
           </section>

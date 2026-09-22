@@ -35,7 +35,9 @@ const Navbar = () => {
 
         <ul className="navbar-menu">
           <li><a href="#home" onClick={(event) => handleScroll(event, 'home')}>Home</a></li>
+          <li><a href="#career" onClick={(event) => handleScroll(event, 'career')}>Career</a></li>
           <li><a href="#projects" onClick={(event) => handleScroll(event, 'projects')}>Projects</a></li>
+          <li><a href="#badges" onClick={(event) => handleScroll(event, 'badges')}>Badges</a></li>
           <li><a href="#contact" onClick={(event) => handleScroll(event, 'contact')}>Contact</a></li>
         </ul>
       </nav>
