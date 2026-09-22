@@ -29,7 +29,6 @@ const Navbar = () => {
     <header className="site-header">
       <nav className="navbar" aria-label="Primary">
         <a className="navbar-brand" href="#home" onClick={(event) => handleScroll(event, 'home')}>
-            <img className="navbar-brand__profilepic" src="/src/profil1.webp" alt="Profile Picture" />
           <span className="navbar-brand__text">Reinheart Silalong Alinan</span>
         </a>
 
